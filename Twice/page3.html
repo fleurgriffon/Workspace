@@ -4,12 +4,13 @@
 
   <head>
 	  <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
     <link href="assets/css/reset.css" rel="stylesheet">
 	  <link href="assets/css/styles.css" rel="stylesheet">
 		<link rel="icon" type="image/png" href="icones/favicon.png" />
 	  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    <script src="assets/js/modernizr.js"></script> <!-- Modernizr -->
     <title>Twice</title>
   </head>
 	<body>
@@ -29,7 +30,6 @@
         <img class="fleche_gauche" src="assets/images/fleche_gauche.png"  alt="Précédant" onclick="slideRight()"/>
         <img class="fleche_droite" src="assets/images/fleche_droite.png" alt="Suivant" onclick="slideLeft()"/>
         <div class="line_left_top img"></div>
-        <div class="line_left_bottom"></div>
         <div class="line_right_top"></div>
         <div class="line_right_bottom"></div>
         <div class="line_top_left"></div>
@@ -37,33 +37,8 @@
         <div class="line_bottom_left"></div>
         <div class="line_bottom_right"></div>
     	</div>
-        <section class="cd-horizontal-timeline">
-        	<div class="timeline">
-        		<div class="events-wrapper">
-        			<div class="events">
-        				<ol>
-        					<li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
-        					<li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
-        					<li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
-        					<li><a href="#0" data-date="20/05/2014">20 May</a></li>
-        					<li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
-        					<li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
-        					<li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
-        					<li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
-        					<li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
-        					<li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
-        					<li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
-        				</ol>
 
-        				<span class="filling-line" aria-hidden="true"></span>
-        			</div> <!-- .events -->
-        		</div> <!-- .events-wrapper -->
-
-        		<ul class="cd-timeline-navigation">
-        			<li><a href="#0" class="prev inactive">Prev</a></li>
-        			<li><a href="#0" class="next">Next</a></li>
-        		</ul> <!-- .cd-timeline-navigation -->
-        	</div> <!-- .timeline -->
+        <section class="cd-horizontal-timeline" id="content">
 
         	<div class="events-content">
         		<ol>
@@ -121,7 +96,6 @@
         				<p>
         					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.
         				</p>
-        				<img src="assets/images/pic1_full.png">
         			</li>
 
         			<li data-date="01/11/2014">
@@ -157,15 +131,42 @@
         			</li>
         		</ol>
         	</div> <!-- .events-content -->
-        </section>
 
+          <div class="timeline" id="timeline">
+            <div class="events-wrapper">
+              <div class="events">
+                <ol>
+                  <li><a href="#0" data-date="16/01/2014" class="selected">16 Jan</a></li>
+                  <li><a href="#0" data-date="28/02/2014">28 Feb</a></li>
+                  <li><a href="#0" data-date="20/04/2014">20 Mar</a></li>
+                  <li><a href="#0" data-date="20/05/2014">20 May</a></li>
+                  <li><a href="#0" data-date="09/07/2014">09 Jul</a></li>
+                  <li><a href="#0" data-date="30/08/2014">30 Aug</a></li>
+                  <li><a href="#0" data-date="15/09/2014">15 Sep</a></li>
+                  <li><a href="#0" data-date="01/11/2014">01 Nov</a></li>
+                  <li><a href="#0" data-date="10/12/2014">10 Dec</a></li>
+                  <li><a href="#0" data-date="19/01/2015">29 Jan</a></li>
+                  <li><a href="#0" data-date="03/03/2015">3 Mar</a></li>
+                </ol>
+
+                <span class="filling-line" aria-hidden="true"></span>
+              </div> <!-- .events -->
+            </div> <!-- .events-wrapper -->
+
+            <ul class="cd-timeline-navigation">
+              <li><a href="#0" class="prev inactive">Prev</a></li>
+              <li><a href="#0" class="next">Next</a></li>
+            </ul> <!-- .cd-timeline-navigation -->
+          </div> <!-- .timeline -->
+
+        </section>
 
     </div>
 
 
-    <script src="js/jquery-2.1.4.js"></script>
-    <script src="js/jquery.mobile.custom.min.js"></script>
-    <script src="js/main.js"></script> <!-- Resource jQuery -->
+    <script src="assets/js/jquery-2.1.4.js"></script>
+    <script src="assets/js/jquery.mobile.custom.min.js"></script>
+    <script src="assets/js/main.js"></script> <!-- Resource jQuery -->
 	</body>
 
 </html>
