@@ -1,0 +1,222 @@
+body {
+	margin: 0;
+	position: relative;
+}
+
+.viewport {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-image: url("../images/bg.png");
+	background-size: cover;
+}
+
+.header img{
+	position:absolute;
+	color:white;
+	z-index:1;
+}
+
+.main_logo{
+	top: 15%;
+	left: 38%;
+	max-height: 50%;
+	max-width: 26%;
+}
+
+.gauche{
+	bottom: 22%;
+	left: 29.5%;
+	max-height: 50%;
+	max-width: 2%;
+}
+
+.droite{
+	bottom: 22%;
+	left: 67.5%;
+	max-height: 50%;
+	max-width: 2%;
+}
+
+.anglais{
+	bottom: 20%;
+	left: 37.5%;
+	max-height: 50%;
+	max-width: 15%;
+}
+
+.francais{
+	bottom: 20%;
+	left: 47.5%;
+	max-height: 50%;
+	max-width: 15%;
+}
+
+
+.espagnol{
+	bottom: 20%;
+	left: 57.5%;
+	max-height: 50%;
+	max-width: 15%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.icone_livre{
+	top: 17px;
+	right: 245px;
+}
+
+.icone_carnet{
+	top: 20px;
+	right: 190px;
+}
+
+.icone_photo{
+	top: 20px;
+	right: 120px;
+}
+
+.icone_video{
+	top: 21px;
+	right: 50px;
+}
+
+.icone_volume{
+	bottom: 20px;
+	left:50px;
+}
+
+.fleche_gauche{
+	left: 95px;
+	top: 43%;
+}
+
+.fleche_droite{
+	right: 55px;
+	top: 43%;
+}
+
+.timeline_point{
+	bottom: 23px;
+}
+
+.line_left_top{
+	background-color: white;
+	width: 1px;
+	height: 50%;
+	top: 32px;
+	left: 32px;
+	z-index: 1;
+	position: absolute;
+}
+
+.line_left_bottom{
+	background-color: white;
+	width: 1px;
+	height: 50%;
+	bottom: 32px;
+	left: 32px;
+	z-index: 1;
+	position: absolute;
+}
+
+.line_right_top{
+	background-color: white;
+	width: 1px;
+	height: 50%;
+	top: 32px;
+	right: 32px;
+	z-index: 1;
+	position: absolute;
+}
+
+.line_right_bottom{
+	background-color: white;
+	width: 1px;
+	height: 50%;
+	bottom: 32px;
+	right: 32px;
+	z-index: 1;
+	position: absolute;
+}
+
+.line_top_left{
+	background-color: white;
+	height: 1px;
+	width: 50%;
+	top: 32px;
+	left: 32px;
+	z-index: 1;
+	position: absolute;
+}
+
+.line_top_right{
+	background-color: white;
+	height: 1px;
+	width: 50%;
+	top: 32px;
+	right: 32px;
+	z-index: 1;
+	position: absolute;
+}
+
+
+.line_bottom_left{
+	background-color: white;
+	height: 1px;
+	width: 50%;
+	bottom: 32px;
+	left: 32px;
+	z-index: 1;
+	position: absolute;
+}
+
+.line_bottom_right{
+	background-color: white;
+	height: 1px;
+	width: 50%;
+	bottom: 32px;
+	right: 32px;
+	z-index: 1;
+	position: absolute;
+}
+
+
+.slides {
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 100vh;
+	box-sizing: border-box;
+	border: 2em solid black;
+}
+
+.slide {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-image: url("../images/bg.png");
+  background-size: cover;
+}
+
+.slide:target {
+	color: red;
+}
+
+ul {
+	position: absolute;
+	z-index: 2;
+	top: 45px;
+	right: 45px;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	display: inline-block;
+	color: white;
+}

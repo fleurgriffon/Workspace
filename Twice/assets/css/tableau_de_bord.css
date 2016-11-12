@@ -1,0 +1,184 @@
+body {
+	margin: 0;
+	position: relative;
+	background-image: url(../images/bg.png);
+}
+.header{
+	position: relative;
+	width: 100vw;
+}
+div.slide img{
+	position: relative;
+}
+.header img{
+	position:fixed;
+	color:white;
+	z-index:1;
+	cursor: pointer;
+}
+.logo{
+	top: 20px;
+	left: 20px;
+}
+.date{
+	width:150px;
+	margin-left:-75px;
+	top: 20px;
+	left: 50%;
+}
+.icone_jumeau{
+	top: 10px;
+	right: 375px;
+}
+
+.icone_glossaire{
+	top: 17px;
+	right: 310px;
+}
+
+.icone_livre{
+	top: 17px;
+	right: 245px;
+}
+
+.icone_carnet{
+	top: 20px;
+	right: 190px;
+}
+
+.icone_photo{
+	top: 20px;
+	right: 120px;
+}
+
+.icone_video{
+	top: 21px;
+	right: 50px;
+}
+
+.icone_volume{
+	bottom: 20px;
+	left:50px;
+}
+
+.fleche_gauche{
+	height:60px;
+	left: 85px;
+	top: 43%;
+}
+
+.fleche_gauche:hover{
+/*	background-image:url("../images/fleche_droite.png");*/
+	left: 95px;
+	top: 43%;
+}
+
+.fleche_droite{
+	width:40px;
+	right: 55px;
+	top: 43%;
+}
+
+.timeline_point{
+	bottom: 23px;
+}
+
+.line_left_top{
+	position:fixed;
+	background-color: white;
+	width: 1px;
+	height: 50%;
+	top: 104px;
+	left: 69px;
+	z-index: 1;
+}
+
+.line_left_bottom{
+	position:fixed;
+	background-color: white;
+	width: 1px;
+	height: 50%;
+	bottom: 73px;
+	left: 69px;
+	z-index: 1;
+}
+
+.line_right_top{
+	position:fixed;
+	background-color: white;
+	width: 1px;
+	height: 50%;
+	top: 32px;
+	right: 32px;
+	z-index: 1;
+}
+
+.line_right_bottom{
+	position:fixed;
+	background-color: white;
+	width: 1px;
+	height: 50%;
+	bottom: 32px;
+	right: 32px;
+	z-index: 1;
+}
+
+.line_top_left{
+	position:fixed;
+	background-color: white;
+	height: 1px;
+	width: 40%;
+	top: 32px;
+	left: 220px;
+	z-index: 1;
+}
+
+.line_top_right{
+	position:fixed;
+	background-color: white;
+	height: 1px;
+	width: 40%;
+	top: 32px;
+	right: 460px;
+	z-index: 1;
+}
+
+.line_bottom_left{
+	position:fixed;
+	background-color: white;
+	height: 1px;
+	width: 50%;
+	bottom: 32px;
+	left: 110px;
+	z-index: 1;
+}
+
+.line_bottom_right{
+	position:fixed;
+	background-color: white;
+	height: 1px;
+	width: 50%;
+	bottom: 32px;
+	right: 32px;
+	z-index: 1;
+}
+.slides {
+	position: relative;
+	white-space: nowrap;
+	overflow: hidden;
+	height: 100vh;
+	box-sizing: border-box;
+	border: 2em solid black;
+}
+
+.slide {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	/*background-image: url("../images/pic1_full.png");*/
+  background-size: cover;
+}
+
+.slide:target {
+	color: red;
+}

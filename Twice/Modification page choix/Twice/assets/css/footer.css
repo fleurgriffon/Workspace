@@ -1,0 +1,30 @@
+#grey {
+  background-color: #828282;
+  height: 40px;
+  opacity: 0.4;
+  bottom: 0px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  border-top: 1px solid #ffffff;
+
+}
+
+
+
+#esp{
+position: absolute;
+z-index: 2;
+left: 45%;
+font-family: 'Letter Got';
+font-size: 15px;
+font-style: italic;
+margin-top: 14px;
+}
+
+@font-face {
+font-family: 'Letter Got';
+src: url('../fonts/LetterGothicStd.otf');
+font-weight: normal;
+font-style: normal;
+}
