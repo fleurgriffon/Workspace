@@ -1,6 +1,8 @@
 @import url("components/banner.css");
 @import url("components/container.css");
 @import url("components/features.css");
+@import url("components/galery.css");
+@import url("components/portfolio.css");
 
 body {
   margin: 0;
@@ -21,7 +23,13 @@ h2 {
 .wrapper-grey {
   background: #F4F4F4;
 }
-footer{
+footer {
+  display: block;
+  justify-content: center;
+  color: orange;
   background-color: black;
-  height: 100px;
+  margin: 0 0%;
+  padding: 10% 10%;
+  text-decoration: none;
+  list-style-type: none;
 }
