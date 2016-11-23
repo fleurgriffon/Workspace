@@ -7,6 +7,7 @@
   width: 100 vh;
   height: 100%;
   z-index: 1;
+  color: white;
 }
 .banner{
   background-color: black;
@@ -25,4 +26,20 @@
   height: 100vh;
   margin-left: 50vw;
   width: 50vw;
+}
+/*///////////////////////*/
+.intro{
+  position: absolute;
+  z-index: 2;
+  text-align: left;
+  padding: 0 0;
+  margin: 70vh 5vw;
+  justify-content: center;
+}
+.hideme{
+  opacity:0;
+}
+.intro :first-child{
+  font-size: 2em;
+  text-shadow: 2px 2px 3px #272727;
 }
