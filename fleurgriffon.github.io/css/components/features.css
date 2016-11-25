@@ -2,4 +2,16 @@
   display: flex;
   justify-content: center;
   margin: 10% 10%;
+  text-align: center;
+}
+.features h2{
+  font-family: 'Montserrat', sans-serif;
+}
+.features p{
+
+}
+.features img{
+  width: 7vw;
+  margin: auto auto;
+  text-align: center;
 }

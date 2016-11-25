@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TwiceV1</title>
+    <%= csrf_meta_tags %>
+    <link rel="stylesheet" href="http://railsgirls.com/assets/bootstrap.css">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+          <div class="container">
+              <a class="brand" href="/">The Idea app</a>
+              <ul class="nav">
+                  <li class="active"><a href="/ideas">Ideas</a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <div class="container">
+    <%= yield %>
+    </div>
+    <footer>
+    <div class="container">
+        Rails Girls 2012
+    </div>
+    </footer>
+  </body>
+</html>

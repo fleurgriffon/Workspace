@@ -3,10 +3,10 @@
 @import url("components/features.css");
 @import url("components/galery.css");
 @import url("components/portfolio.css");
+@import url("components/titles.css");
 
 body {
   margin: 0;
-  font-family: Open-sans, sans-serif;
 }
 h1, h2, h3 {
   font-family: Raleway, Helvetica, sans-serif;
