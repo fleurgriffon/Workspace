@@ -1,12 +1,23 @@
-= image_tag @pin.image.url(:medium)
-%h1= @pin.title
-%p= @pin.description
-%p
-Enregistré par
-= @pin.user.email
-
-%br/
-
-= link_to "Retour", root_path
-= link_to "Editer", edit_pin_path
-= link_to "Supprimer", pin_path, method: :delete, data: { confirm: "Vous êtes sûr ?" }
+#pin_show.row
+	.col-md-8.col-md-offset-2
+		.panel.panel-default
+			.panel-heading.pin_image
+				= image_tag @pin.image.url
+			.panel-body
+				%h1= @pin.title
+				%p.description= @pin.description
+			.panel-footer
+				.row
+					.col-md-6
+						%p.user
+							Publié par
+							= @pin.user.email
+					.col-md-6
+						.btn-group.pull-right
+							= link_to Like_pin_path(@pin), method: :put, class: "btn btn-default" do
+								%span.glyphicon.glyphicon-heart
+								= @pin.get_upvotes.size
+							- if user_signed_in?
+								= link_to "Retour", root_path, class: "btn btn-default"
+								= link_to "Editer", edit_pin_path, class: "btn btn-default"
+								= link_to "Supprimer", pin_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default"
