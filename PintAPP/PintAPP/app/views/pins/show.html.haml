@@ -1,5 +1,10 @@
 %h1= @pin.title
 %p= @pin.description
+%p
+Enregistré par
+= @pin.user.email
+
+%br/
 
 = link_to "Retour", root_path
 = link_to "Editer", edit_pin_path
